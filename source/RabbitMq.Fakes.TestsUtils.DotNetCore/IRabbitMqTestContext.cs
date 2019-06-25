@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RabbitMQ.Context;
+﻿using RabbitMQ.Context;
 
-namespace RabbitMq.Fakes.TestsUtils.DotNetCore
+namespace RabbitMq.TestContext
 {
     public interface IRabbitMqTestContext : IRabbitMqContext
     {

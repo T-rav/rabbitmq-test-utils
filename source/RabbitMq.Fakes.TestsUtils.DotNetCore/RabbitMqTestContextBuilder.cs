@@ -1,11 +1,9 @@
-﻿using System;
-using RabbitMQ.Client;
+﻿using RabbitMQ.Client;
 using RabbitMQ.Context;
 using RabbitMQ.Fakes;
 
-namespace RabbitMq.Fakes.TestsUtils.DotNetCore
+namespace RabbitMq.TestContext
 {
-    // todo : return RabbitMqTestContext : IRabbitMqContext + IRabbitMqTestAssertions?
     public class RabbitMqTestContextBuilder
     {
         private string _exchangeName;

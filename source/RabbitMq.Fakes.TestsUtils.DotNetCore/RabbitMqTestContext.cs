@@ -4,7 +4,7 @@ using FluentAssertions;
 using RabbitMQ.Context;
 using RabbitMQ.Fakes;
 
-namespace RabbitMq.Fakes.TestsUtils.DotNetCore
+namespace RabbitMq.TestContext
 {
     public class RabbitMqTestContext : IRabbitMqTestContext
     {
