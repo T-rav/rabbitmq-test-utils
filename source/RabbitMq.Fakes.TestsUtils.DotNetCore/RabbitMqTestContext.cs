@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using FluentAssertions;
 using RabbitMQ.Context;
@@ -39,6 +40,11 @@ namespace RabbitMq.TestContext
         public Task ConsumeMessage(string queueName, Func<byte[], Task<bool>> action)
         {
             return _rabbitMqContext.ConsumeMessage(queueName, action);
+        }
+
+        public Task BatchConsumeMessage(string queueName, Func<List<byte[]>, Task<bool>> action)
+        {
+            return _rabbitMqContext.BatchConsumeMessage(queueName, action);
         }
 
         public void Assert_Queue_Message_Count_Is(uint count)
