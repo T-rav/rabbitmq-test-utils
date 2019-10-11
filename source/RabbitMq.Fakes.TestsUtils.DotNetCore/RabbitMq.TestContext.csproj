@@ -7,14 +7,14 @@
     <Company>StoneAge Technologies</Company>
     <Description>Designed to help with testing of rabbitmq stuff. Makes use of RabbitMQ.Fakes.DotNetCore.
 The class is a wrapper of RabbitMqContext simular to Ef context object. This implemenation wraps the production RabbitMqContext from RabbitMQ.Context</Description>
-    <PackageReleaseNotes>Updated RabbitMQ.Context package</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated RabbitMQ.Context package to reflect new batchSize parameter</PackageReleaseNotes>
     <AssemblyName>RabbitMq.TestContext</AssemblyName>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="5.9.0" />
-    <PackageReference Include="RabbitMQ.Context" Version="1.2.2" />
+    <PackageReference Include="RabbitMQ.Context" Version="1.2.3" />
     <PackageReference Include="RabbitMQ.Fakes.DotNetCore" Version="0.9.1" />
     <PackageReference Include="StoneAge.System.Utils.DotNetCore" Version="1.5.0" />
   </ItemGroup>

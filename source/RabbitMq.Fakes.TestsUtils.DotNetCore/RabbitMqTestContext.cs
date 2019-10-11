@@ -42,9 +42,9 @@ namespace RabbitMq.TestContext
             return _rabbitMqContext.ConsumeMessage(queueName, action);
         }
 
-        public Task BatchConsumeMessage(string queueName, Func<List<byte[]>, Task<bool>> action)
+        public Task BatchConsumeMessage(string queueName, ushort batchSize, Func<List<byte[]>, Task<bool>> action)
         {
-            return _rabbitMqContext.BatchConsumeMessage(queueName, action);
+            return _rabbitMqContext.BatchConsumeMessage(queueName, batchSize, action);
         }
 
         public void Assert_Queue_Message_Count_Is(uint count)
