@@ -1,22 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>StoneAge Technologies</Authors>
     <Company>StoneAge Technologies</Company>
     <Description>Designed to help with testing of rabbitmq stuff. Makes use of RabbitMQ.Fakes.DotNetCore.
 The class is a wrapper of RabbitMqContext simular to Ef context object. This implemenation wraps the production RabbitMqContext from RabbitMQ.Context</Description>
-    <PackageReleaseNotes>Updated RabbitMQ.Context package to reflect new batchSize parameter</PackageReleaseNotes>
+    <PackageReleaseNotes>.net 5 update</PackageReleaseNotes>
     <AssemblyName>RabbitMq.TestContext</AssemblyName>
-    <Version>1.0.3</Version>
+    <Version>5.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentAssertions" Version="5.9.0" />
-    <PackageReference Include="RabbitMQ.Context" Version="1.2.3" />
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="RabbitMQ.Context" Version="1.2.8" />
     <PackageReference Include="RabbitMQ.Fakes.DotNetCore" Version="0.9.1" />
-    <PackageReference Include="StoneAge.System.Utils.DotNetCore" Version="1.5.0" />
+    <PackageReference Include="StoneAge.System.Utils.DotNetCore" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
